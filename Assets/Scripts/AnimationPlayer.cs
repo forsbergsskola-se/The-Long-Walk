@@ -18,7 +18,7 @@ public class AnimationPlayer : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         var value = animation.Play();
-        Debug.Log(value);
+        Debug.Log($"Animation played: {(value ? "Successfully" : "Unsuccessfully")} {gameObject.name}");
     }
 
     [ContextMenu("PlayAnimation")]
